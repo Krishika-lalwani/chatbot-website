@@ -1,27 +1,29 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
+# Page configuration
 st.set_page_config(
     page_title="Hypothesis Testing AI Assistant",
     page_icon="📊",
     layout="wide"
 )
 
-# Header
+# Title
 st.title("📊 Hypothesis Testing AI Assistant")
-st.write("Learn and solve hypothesis testing problems with an AI chatbot.")
+st.write("Learn and solve hypothesis testing problems using an AI chatbot.")
 
 st.markdown("---")
 
-# Features
+# Features section
 col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("### 📘 Learn Concepts")
-    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values, and significance levels.")
+    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values and significance levels.")
 
 with col2:
     st.markdown("### 📊 Solve Problems")
-    st.write("Get step-by-step help solving hypothesis testing questions.")
+    st.write("Get step-by-step help solving hypothesis testing problems.")
 
 with col3:
     st.markdown("### 🤖 AI Chatbot")
@@ -30,16 +32,11 @@ with col3:
 st.markdown("---")
 
 st.subheader("💬 Chat with the Hypothesis Testing Assistant")
-st.write("Use the chat icon at the bottom-right corner of the page.")
 
-# Inject Botpress chatbot
-st.markdown(
-"""
-<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2026/02/20/15/20260220151633-YX2ZU91U.js" defer></script>
-""",
-unsafe_allow_html=True
-)
+# Embed chatbot using iframe
+chatbot_url = "https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/02/20/15/20260220151633-UWG3A038.json"
+
+components.iframe(chatbot_url, height=650)
 
 st.markdown("---")
 st.write("© 2026 Hypothesis Testing AI Assistant")
