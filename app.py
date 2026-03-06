@@ -34,18 +34,9 @@ st.markdown("---")
 st.subheader("💬 Chat with the Hypothesis Testing Assistant")
 
 # Embed chatbot using iframe
-with col1:
-    st.markdown("### 📘 Learn Concepts")
-    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values,significance levels and some tests.")
+chatbot_url = "https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/02/20/15/20260220151633-UWG3A038.json"
 
-with col2:
-    st.markdown("### 📊 Solve Problems")
-    st.write("Get step-by-step help solving hypothesis testing problems.")
-
-with col3:
-    st.markdown("### 🤖 AI Chatbot")
-    st.write("Interact with an AI assistant trained for statistics.")
-
+components.iframe(chatbot_url, height=650)
 st.markdown("---")
 st.markdown("---")
 st.write("© 2026 Hypothesis Testing AI Assistant")
