@@ -52,7 +52,7 @@ with col1:
     st.markdown("""
     <div class="card">
     <h3>📘 Learn Concepts</h3>
-    <p>Understand Null Hypothesis, Alternative Hypothesis, p-values and significance levels.</p>
+    <p>Understand Null Hypothesis, Alternative Hypothesis, p-values, significance levels and some of the tests.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -74,7 +74,7 @@ with col3:
 
 st.markdown("---")
 
-st.subheader("💬 Chat with the Hypothesis Testing Assistant")
+st.subheader("💬 Click the chat icon at the bottom right to start Chat with the Hypothesis Testing Assistant")
 
 # Embed Botpress chatbot
 chatbot_html = """
