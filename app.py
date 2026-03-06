@@ -42,4 +42,6 @@ st.markdown("---")
 st.write("© 2026 Hypothesis Testing AI Assistant")
 
 
-st.switch_page("app.py")
+if "initialized" not in st.session_state:
+    st.session_state.clear()
+    st.session_state.initialized = True
