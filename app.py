@@ -34,6 +34,18 @@ st.markdown("---")
 st.subheader("💬 Chat with the Hypothesis Testing Assistant")
 
 # Embed chatbot using iframe
+with col1:
+    st.markdown("### 📘 Learn Concepts")
+    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values,significance levels and some tests.")
 
+with col2:
+    st.markdown("### 📊 Solve Problems")
+    st.write("Get step-by-step help solving hypothesis testing problems.")
+
+with col3:
+    st.markdown("### 🤖 AI Chatbot")
+    st.write("Interact with an AI assistant trained for statistics.")
+
+st.markdown("---")
 st.markdown("---")
 st.write("© 2026 Hypothesis Testing AI Assistant")
