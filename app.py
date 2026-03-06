@@ -1,11 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-if "initialized" not in st.session_state:
-    st.session_state.clear()
-    st.session_state.initialized = True
-
-
 # Page configuration
 st.set_page_config(
     page_title="Hypothesis Testing AI Assistant",
@@ -45,8 +40,3 @@ components.iframe(chatbot_url, height=650)
 st.markdown("---")
 st.markdown("---")
 st.write("© 2026 Hypothesis Testing AI Assistant")
-
-
-if "initialized" not in st.session_state:
-    st.session_state.clear()
-    st.session_state.initialized = True
