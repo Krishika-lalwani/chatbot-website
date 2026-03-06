@@ -42,4 +42,4 @@ st.markdown("---")
 st.write("© 2026 Hypothesis Testing AI Assistant")
 
 
-st.query_params
+st.switch_page("Home.py")
