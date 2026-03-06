@@ -32,8 +32,7 @@ components.html(
 <!DOCTYPE html>
 <html>
 <head>
-
-    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/02/20/15/20260220151633-YX2ZU91U.js" defer></script>
     
 
