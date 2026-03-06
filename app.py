@@ -19,7 +19,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("### 📘 Learn Concepts")
-    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values and significance levels.")
+    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values,significance levels and some tests.")
 
 with col2:
     st.markdown("### 📊 Solve Problems")
