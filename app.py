@@ -39,6 +39,7 @@ chatbot_url = "https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=
 components.iframe(chatbot_url, height=650)
 st.markdown("---")
 st.markdown("---")
+st.write("© 2026 Hypothesis Testing AI Assistant")
+
 
 st.query_params
-st.write("© 2026 Hypothesis Testing AI Assistant")
