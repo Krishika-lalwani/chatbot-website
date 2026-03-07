@@ -19,7 +19,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("### 📘 Learn Concepts")
-    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values, significance levels and some tests.")
+    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values, significance levels and statistical tests.")
 
 with col2:
     st.markdown("### 📊 Solve Problems")
@@ -31,16 +31,20 @@ with col3:
 
 st.markdown("---")
 
-st.subheader("💬 Chat with the Hypothesis Testing Assistant")
+st.subheader("💬 Ask Questions About Hypothesis Testing")
 
-# Embed Botpress chatbot
-botpress_html = """
+st.write(
+    "Use the chatbot in the bottom-right corner to ask questions, learn concepts, "
+    "or solve hypothesis testing problems."
+)
+
+# Botpress floating chatbot injection
+botpress_widget = """
 <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/02/20/15/20260220151633-YX2ZU91U.js" defer></script>
 """
 
-components.html(botpress_html, height=650)
+components.html(botpress_widget, height=0)
 
-st.markdown("---")
 st.markdown("---")
 st.write("© 2026 Hypothesis Testing AI Assistant")
