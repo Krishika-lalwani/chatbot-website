@@ -19,7 +19,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("### 📘 Learn Concepts")
-    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values, significance levels and statistical tests.")
+    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values, significance levels and tests.")
 
 with col2:
     st.markdown("### 📊 Solve Problems")
@@ -31,20 +31,24 @@ with col3:
 
 st.markdown("---")
 
-st.subheader("💬 Ask Questions About Hypothesis Testing")
+st.subheader("💬 Ask Questions Using the Chatbot")
 
-st.write(
-    "Use the chatbot in the bottom-right corner to ask questions, learn concepts, "
-    "or solve hypothesis testing problems."
-)
-
-# Botpress floating chatbot injection
+# Inject Botpress widget into the parent page
 botpress_widget = """
+<div id="botpress-chat"></div>
+
 <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2026/02/20/15/20260220151633-YX2ZU91U.js" defer></script>
+<script>
+window.addEventListener("load", function () {
+  const script = document.createElement("script");
+  script.src = "https://files.bpcontent.cloud/2026/02/20/15/20260220151633-YX2ZU91U.js";
+  script.defer = true;
+  document.body.appendChild(script);
+});
+</script>
 """
 
-components.html(botpress_widget, height=0)
+components.html(botpress_widget, height=50)
 
 st.markdown("---")
 st.write("© 2026 Hypothesis Testing AI Assistant")
