@@ -37,5 +37,3 @@ if st.button("Open AI Chatbot 🤖"):
 
     components.iframe(chatbot_url, height=700)
 
-st.markdown("---")
-st.write("© 2026 Hypothesis Testing AI Assistant")
