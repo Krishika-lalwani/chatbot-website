@@ -16,7 +16,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("### 📘 Learn Concepts")
-    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values, significance levels and tests.")
+    st.write("Understand Null Hypothesis, Alternative Hypothesis, p-values and significance levels.")
 
 with col2:
     st.markdown("### 📊 Solve Problems")
@@ -27,24 +27,15 @@ with col3:
     st.write("Interact with an AI assistant trained for statistics.")
 
 st.markdown("---")
+
 st.subheader("💬 Chat with the Hypothesis Testing Assistant")
 
-chatbot_html = """
-<div id="chat-container"></div>
+# Button to load chatbot
+if st.button("Open AI Chatbot 🤖"):
 
-<script>
-setTimeout(function() {
-    const iframe = document.createElement("iframe");
-    iframe.src = "https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/02/20/15/20260220151633-UWG3A038.json";
-    iframe.width = "100%";
-    iframe.height = "700";
-    iframe.style.border = "none";
-    document.getElementById("chat-container").appendChild(iframe);
-}, 1500); // delay loading by 1.5 seconds
-</script>
-"""
+    chatbot_url = "https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/02/20/15/20260220151633-UWG3A038.json"
 
-components.html(chatbot_html, height=720)
+    components.iframe(chatbot_url, height=700)
 
 st.markdown("---")
 st.write("© 2026 Hypothesis Testing AI Assistant")
