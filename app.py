@@ -35,5 +35,5 @@ if st.button("Open AI Chatbot 🤖"):
 
     chatbot_url = "https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/02/20/15/20260220151633-UWG3A038.json"
 
-    components.iframe(chatbot_url, height=400)
+    components.iframe(chatbot_url, height=500)
 
